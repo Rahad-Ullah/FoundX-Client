@@ -1,9 +1,9 @@
-import { title } from "@/src/components/primitives";
-
-export default function Home() {
+import Banner from "@/src/components/modules/home/Banner";
+const Home = () => {
   return (
-    <section className="flex flex-col items-center justify-center gap-4 py-8 md:py-10">
-      <h1 className={title()}>Welcome to FoundX Home Page</h1>
+    <section>
+      <Banner />
     </section>
   );
-}
+};
+export default Home;
