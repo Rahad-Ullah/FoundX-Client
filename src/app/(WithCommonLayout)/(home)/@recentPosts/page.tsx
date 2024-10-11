@@ -18,7 +18,7 @@ const RecentPosts = async () => {
           </p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {posts?.map((post: IPost) => <Card post={post} />)}
+          {posts?.map((post: IPost) => <Card key={post._id} post={post} />)}
         </div>
       </Containter>
     </div>
