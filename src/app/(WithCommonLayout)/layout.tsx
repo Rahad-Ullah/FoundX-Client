@@ -4,9 +4,7 @@ const CommonLayout = ({ children }: { children: React.ReactNode }) => {
   return (
     <div className="relative">
       <Navbar />
-      <main>
-        {children}
-      </main>
+      <main>{children}</main>
     </div>
   );
 };
