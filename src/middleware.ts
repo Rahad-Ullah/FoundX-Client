@@ -14,11 +14,11 @@ type TRole = keyof typeof roleBasedRoutes;
 export function middleware(request: NextRequest) {
   const { pathname } = request.nextUrl;
 
-  const user = {
-    name: "Rahad",
-    role: "ADMIN",
-  };
-  //   const user = undefined;
+  // const user = {
+  //   name: "Rahad",
+  //   role: "ADMIN",
+  // };
+  const user = undefined;
 
   if (!user) {
     if (authRoutes.includes(pathname)) {
